@@ -1,0 +1,388 @@
+@media only screen and (max-width: 1200px) {
+  /********** [ MAIN PARTS ] **********/
+  .container {
+    width: 960px;
+  }
+  /********** [ MAIN PAGE SHOTS ] **********/
+  .work-sec-works div {
+    width: 32%;
+    height: 225px;
+  }
+  /********** [ USER PROFILE ] **********/
+  .user-sec-works div {
+    width: 32%;
+    height: 225px;
+  }
+}
+/*
+/*
+/*/
+/*
+/*
+/*/
+@media only screen and (max-width: 961px) {
+  /********** [ MAIN PARTS ] **********/
+  .container {
+    width: 720px;
+  }
+  /********** [ NAVIGATION ] **********/
+  .btn-sus {
+    display: block;
+  }
+  .main-nav {
+    overflow: visible;
+  }
+  .btn_sus_hover {
+    color: black;
+    background: white;
+  }
+  .btn-sus:link,
+  .btn-sus:hover:visited {
+    color: black;
+  }
+  .show_nav_links {
+    display: flex !important;
+  }
+  .main-nav-hidden {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+    background: white;
+    align-items: flex-start;
+    padding: 16px 0;
+  }
+  .main-nav ul {
+    flex-direction: column;
+  }
+  .main-nav ul li {
+    padding-bottom: 16px;
+  }
+  ..nav-btns a {
+    color: #00e59b;
+    background: rgb(0, 0, 0);
+    margin-left: 16px;
+  }
+  ..nav-btns a:hover {
+    color: black;
+    background: #00e59b;
+  }
+  /********** [ WELCOME PART ] **********/
+  .welcome-flex {
+    flex-direction: column-reverse;
+  }
+  .welcome-txt {
+    width: 100%;
+  }
+  .welcome-illustrat {
+    display: none;
+  }
+  /********** [ SHOTS NAVIGATION ] **********/
+  .works-category li {
+    margin-right: 16px;
+  }
+  .works-category li:last-child {
+    margin-right: 0;
+  }
+  .works-category a {
+    padding: 0;
+  }
+  /********** [ MAIN PAGE SHOTS ] **********/
+  .work-sec-works div {
+    width: 48%;
+    height: 260px;
+  }
+  /********** [ FOOTER ] **********/
+  .copy-right-and-more {
+    flex-direction: column;
+    align-items: center;
+  }
+  .copy-right-and-more span {
+    margin-bottom: 16px;
+  }
+  /********** [ LOGIN PAGE ] **********/
+  .artwork {
+    display: none;
+  }
+  .login-form-and-more {
+    width: 100%;
+    padding: 0 64px;
+  }
+  .new-member-login {
+    position: relative;
+    order: 4;
+    margin-top: 16px;
+  }
+  .sign-in-form form button {
+    width: 100%;
+  }
+  /********** [ SIGNUP PAGE ] **********/
+  .artwork-signup {
+    display: none;
+  }
+  /********** [ USER PROFILE ] **********/
+  .user-sec-works div {
+    width: 48%;
+    height: 260px;
+  }
+  .flex-usercover {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .user-change-profile {
+    margin-top: 16px;
+  }
+  .user-msg {
+    font-size: 10px;
+    padding: 8px 24px;
+  }
+  .user-follow {
+    font-size: 10px;
+    padding: 8px 24px;
+  }
+  /********** [ USER ACCOUNT ] **********/
+  .user-account {
+    flex-direction: row;
+  }
+  .user-account-main {
+    width: 100%;
+    order: 2;
+  }
+  .sidebar {
+    width: 100%;
+    order: 1;
+    padding: 0;
+  }
+  .sidebar_btn {
+    display: block;
+    width: 100%;
+    font-family: "Kufam", cursive;
+    font-size: 14px;
+    padding: 16px;
+    border: none;
+    color: rgba(31, 35, 40, 1);
+    background-color: #fff;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    border-radius: 8px;
+    border-bottom: 1px solid #eee;
+    outline: none;
+  }
+  .sidebar ul {
+    display: none;
+  }
+  .sidebar ul li a {
+    border-radius: 0;
+    border-bottom: 1px solid #eee;
+  }
+  .checkbox_style {
+    line-height: 24px;
+  }
+}
+/*
+/*
+/*/
+/*
+/*
+/*/
+@media only screen and (max-width: 721px) {
+  /********** [ MAIN PARTS ] **********/
+  .container {
+    width: 480px;
+  }
+  /********** [ SHOTS NAVIGATION ] **********/
+  .work-nav {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  .works-category {
+    order: 3;
+    width: 100% !important;
+    margin: 16px 0 !important;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 16px;
+  }
+  .timeSelect-content {
+    min-width: 220px;
+  }
+  .filter-nav {
+    flex-direction: column;
+  }
+  .search-form {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .period-of-time {
+    width: 100%;
+  }
+  /********** [ MAIN PAGE SHOTS ] **********/
+  .work-sec-works {
+    justify-content: center;
+  }
+  .work-sec-works div {
+    width: 100%;
+    height: 360px;
+  }
+  .work-nav {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
+  /********** [ USER PROFILE ] **********/
+  .user-nav-flex {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .user-profile-navigation ul li {
+    padding: 8px 0;
+  }
+  .user-profile-navigation ul li a {
+    padding: 8px 16px;
+  }
+  .user-sec-works {
+    justify-content: center;
+  }
+  .user-sec-works div {
+    width: 100%;
+    height: 360px;
+  }
+  /********** [ USER ACCOUNT ] **********/
+  /**[ ACCOUNT EDIT PART ] **/
+  .row_col {
+    flex-direction: column;
+  }
+  .col_50 {
+    width: 100%;
+  }
+  .form_account {
+    flex-direction: column;
+  }
+  .form_div_50 {
+    width: 100%;
+  }
+  .avatar_edit {
+    flex-direction: column;
+  }
+  .picture {
+    margin-bottom: 8px;
+  }
+  .green_btn,
+  .gray_btn {
+    margin-bottom: 16px;
+  }
+}
+/*
+/*
+/*/
+/*
+/*
+/*/
+@media only screen and (max-width: 481px) {
+  /********** [ MAIN PARTS ] **********/
+  .container {
+    width: 80%;
+  }
+  /********** [ WELCOME PART ] **********/
+  .welcome-txt h1 {
+    font-size: 32px;
+  }
+  .welcome-txt p {
+    font-size: 18px;
+  }
+  /********** [ MAIN PAGE SHOTS ] **********/
+  .work-sec-works div {
+    width: 450px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+  .work-sec-works div picture img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  /********** [ LOGIN PAGE ] **********/
+  .sign-in-form form {
+    width: 90%;
+  }
+  .google-sign-in {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .twitter-sign-in {
+    font-size: 12px;
+    padding: 8px;
+  }
+  /********** [ USER PROFILE ] **********/
+  .user-avatar {
+    width: 60px;
+  }
+  .user-info-lil-sec h1 {
+    font-family: "Kufam", cursive;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .user-info-lil-sec p {
+    font-family: "Kufam", cursive;
+    font-weight: normal;
+    font-size: 10px;
+    margin: 8px 0;
+    color: #b1b1b9;
+  }
+  .user-info-lil-sec ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .user-info-lil-sec ul li {
+    font-family: "Kufam", cursive;
+    font-weight: normal;
+    font-size: 9px;
+    margin-right: 6px;
+  }
+  .user-info-lil-sec ul li:after {
+    padding-left: 6px;
+  }
+  .flex-usercover {
+    align-items: center;
+  }
+  .user-change-profile {
+    margin-top: 12px;
+  }
+  .user-profile-navigation ul li a {
+    font-size: 10px;
+  }
+  .user-sec-works div {
+    width: 450px;
+    height: 180px;
+    margin-bottom: 16px;
+  }
+  .user-sec-works div picture img {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+  .user-lil-nav-works {
+    flex-direction: column;
+  }
+  .user-lil-nav-works h2 {
+    margin-bottom: 16px;
+  }
+}
+/*
+/*
+/*/
+/*
+/*
+/*/
+@media only screen and (max-width: 301px) {
+  /********** [ MAIN PAGE SHOTS ] **********/
+  .work-sec-works div {
+    height: 150px;
+  }
+}

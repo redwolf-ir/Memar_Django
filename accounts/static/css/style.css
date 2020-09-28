@@ -1,0 +1,1525 @@
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  overflow-x: hidden;
+}
+.alert {
+  position: fixed;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%);
+  margin: auto;
+  z-index: 100;
+  transition: 0.3s;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  padding: 16px 32px;
+  color: white;
+  font-weight: bold;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.alert a {
+  color: #06070d !important;
+  text-decoration: none;
+}
+.alert button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  color: seashell;
+}
+.alert button:hover {
+  color: black;
+}
+.success {
+  background-color: seagreen;
+  color: white;
+}
+.warning {
+  background-color: tomato;
+  color: white;
+}
+.error {
+  background-color: firebrick;
+  color: white;
+}
+/************************************/
+/********** [ NAVIGATION ] **********/
+/************************************/
+.main-nav {
+  width: 100%;
+  background-color: #06070d;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.logo {
+  flex-grow: 1;
+  color: white;
+}
+.main-nav-hidden {
+  flex-grow: 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-sus {
+  display: none;
+  position: relative;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  color: #00e59b;
+  cursor: pointer;
+  outline: none;
+}
+.nav-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 4;
+}
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+}
+.main-nav ul li:last-child {
+  margin-right: 0;
+}
+.main-nav ul li a {
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 16px;
+  text-decoration: none;
+  color: #b1b1b9;
+}
+.main-nav ul li a:hover {
+  color: #00e59b;
+}
+.nav-btns {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+.nav-btns a {
+  font-family: "Kufam", cursive;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  color: #00e59b;
+  background: transparent;
+  text-decoration: none;
+}
+.nav-btns a:hover {
+  cursor: pointer;
+  color: black;
+  background: white;
+}
+/**************************************/
+/********** [ WELCOME PART ] **********/
+/**************************************/
+.welcome-sec {
+  widows: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: rgb(31, 35, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 35, 40, 1) 0%,
+    rgba(13, 15, 20, 1) 100%
+  );
+}
+.welcome-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.welcome-txt {
+  width: 50%;
+}
+.welcome-txt button {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  background: rgb(7, 241, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 241, 135, 1) 0%,
+    rgba(82, 222, 190, 1) 100%
+  );
+  opacity: 0.8;
+  border: none;
+  padding: 16px 32px;
+  margin-top: 16px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+.welcome-txt button:hover {
+  opacity: 1;
+}
+.welcome-txt span {
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  color: #b1b1b9;
+}
+.welcome-txt h1 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 16px 0;
+  background: rgb(0, 229, 155);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 229, 155, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.welcome-txt p {
+  font-family: "Kufam", cursive;
+  font-size: 24px;
+  line-height: 32px;
+  color: white;
+}
+.welcome-illustrat {
+  width: 500px;
+  height: 400px;
+  background: red;
+}
+/******************************************/
+/********** [ SHOTS NAVIGATION ] **********/
+/******************************************/
+.work-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+/**[ categories ] **/
+.works-category {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 32px;
+  position: relative;
+}
+.works-category::-webkit-scrollbar {
+  display: none;
+}
+.works-category button {
+  background: transparent;
+  border: none;
+}
+.works-category a {
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #b1b1b9;
+}
+.works-category a:hover {
+  color: #00e59b;
+}
+.works-category button {
+  position: absolute;
+  outline: none;
+}
+#left {
+  left: 0;
+  padding: 0 8px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 187, 45, 0) 100%
+  );
+}
+#right {
+  right: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(253, 187, 45, 0) 100%
+  );
+}
+/**[ work selector ] **/
+.select-type-of-work {
+  position: relative;
+}
+.dropbtn {
+  border: none;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  background: transparent;
+  border-radius: 8px;
+  color: rgba(31, 35, 40, 0.5);
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+}
+.dropbtn:hover {
+  color: #06070d;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3);
+}
+.dropbtnHover {
+  color: #06070d !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3) !important;
+}
+.dropdown-content {
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  padding: 8px 0;
+  box-shadow: 0px 0px 0px 1px #eeeeee;
+  border-radius: 8px;
+  background-color: white !important;
+  min-width: 160px;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+}
+.dropdown-content a {
+  float: none;
+  color: rgba(31, 35, 40, 0.5) !important;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #6e6d7a;
+  background-color: #e7e7e9;
+}
+.dropdown-content a:active {
+  color: black !important;
+  background-color: rgba(0, 229, 155, 0.3) !important;
+}
+.show {
+  display: block !important;
+  z-index: 11;
+}
+/**[ filter selector ] **/
+.selector-filter {
+  border: 1px solid #ccc;
+  text-align: center;
+  border-radius: 8px;
+  color: rgba(31, 35, 40, 0.5);
+  background: transparent;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.filterBtnHover {
+  color: #06070d !important;
+  background: #f3f4f4;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3);
+}
+/**[ filter navigation ] **/
+.filter-nav {
+  width: 100%;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+}
+#filterNav {
+  display: none;
+}
+.filter_nav_show {
+  display: block !important;
+}
+.search-form {
+  width: 49%;
+}
+.search-form input {
+  width: 100%;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  color: rgba(31, 35, 40, 0.5);
+  background: #f3f3f4;
+  border: none;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.search-form input:hover,
+.search-form input:focus {
+  background: white;
+  color: #06070d !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3);
+}
+.period-of-time {
+  width: 49%;
+}
+.dropbtn_time {
+  width: 100%;
+  border: none;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  background: white;
+  border-radius: 8px;
+  color: rgba(31, 35, 40, 0.5);
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+}
+.dropbtn_time:hover {
+  color: #06070d !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3) !important;
+}
+.timeSelect-content {
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  padding: 8px 0;
+  box-shadow: 0px 0px 0px 1px #eeeeee;
+  border-radius: 8px;
+  background-color: white !important;
+  min-width: 360px;
+  z-index: 10;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
+}
+.timeSelect-content a {
+  float: none;
+  color: rgba(31, 35, 40, 0.5) !important;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.timeSelect-content a:hover {
+  color: #6e6d7a;
+  background-color: #e7e7e9;
+}
+.timeSelect-content a:active {
+  color: black !important;
+  background-color: rgba(0, 229, 155, 0.3) !important;
+}
+/*****************************************/
+/********** [ MAIN PAGE SHOTS ] **********/
+/*****************************************/
+.work-sec-works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work-sec-works div {
+  width: 24%;
+  height: 210px;
+  background: #dddddd;
+  margin-bottom: 32px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+.work-sec-works div a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.work-sec-works div a:hover,
+.work-sec-works div:hover a {
+  background: rgb(0, 0, 0);
+  opacity: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(82, 222, 190, 0) 50%
+  );
+}
+.work-sec-works div:hover h5 {
+  visibility: visible;
+}
+.work-sec-works div h5 {
+  visibility: hidden;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 16px;
+}
+.work-sec-works div:hover .shot-like-btn {
+  visibility: visible;
+}
+.shot-like-btn {
+  visibility: hidden;
+  color: white;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: 16px;
+  color: #6c6b77;
+}
+.work-sec-works div picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.work-sec-works div picture img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+/********************************/
+/********** [ FOOTER ] **********/
+/********************************/
+.main-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: rgb(31, 35, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 35, 40, 1) 0%,
+    rgba(13, 15, 20, 1) 100%
+  );
+  color: white;
+}
+.bunch-of-links {
+  width: 100%;
+  height: 100px;
+}
+.copy-right-and-more {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b1b1b9;
+  padding: 64px 0;
+  border-top: 1px solid rgba(0, 229, 155, 0.3);
+}
+/************************************/
+/********** [ LOGIN PAGE ] **********/
+/************************************/
+.login-page {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+/**[ form part ] **/
+.new-member-login {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+}
+.new-member-login a {
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  text-decoration: none;
+  color: #6c6b77;
+}
+.new-member-login a:hover {
+  color: #00e59b;
+}
+.login-form-and-more {
+  width: 70%;
+  padding: 0 64px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in-form h1 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+/**[ buttons ] **/
+.google-sign-in {
+  cursor: pointer;
+  width: 84%;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  background: #4285f4;
+  color: white;
+  opacity: 0.9;
+  border: none;
+  padding: 12px 0;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.twitter-sign-in {
+  cursor: pointer;
+  width: 14%;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  background: #f3f3f4;
+  color: rgba(31, 35, 40, 0.7);
+  opacity: 1;
+  border: none;
+  padding: 12px 0;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.sign-in-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sign-in-buttons button:hover {
+  opacity: 1;
+}
+.sign-in-or {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b9;
+}
+.sign-in-or span {
+  margin-bottom: -8px;
+  width: 42px;
+  color: #6c6b77;
+  background: white;
+}
+/**[ login form ] **/
+.sign-in-form form {
+  display: flex;
+  width: 416px;
+  flex-direction: column;
+}
+.sign-in-form form label {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 12px;
+}
+.sign-in-form form input {
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  color: rgba(31, 35, 40, 0.5);
+  background: #f3f3f4;
+  border: none;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.sign-in-form form input:hover,
+.sign-in-form form input:focus {
+  background: white;
+  color: #06070d !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3);
+}
+.sign-in-form form button {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 14px;
+  background: rgb(7, 241, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 241, 135, 1) 0%,
+    rgba(82, 222, 190, 1) 100%
+  );
+  opacity: 0.6;
+  border: none;
+  padding: 8px 0;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  width: 40%;
+  margin-top: 8px;
+}
+.sign-in-form form button:hover {
+  opacity: 1;
+}
+#username {
+  margin-bottom: 16px;
+}
+.password-forget {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-in-form form a {
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  text-decoration: none;
+  color: #b1b1b9;
+}
+.sign-in-form form a:hover {
+  color: #00e59b;
+}
+/**[ Artwork ] **/
+.artwork {
+  width: 514px;
+  height: 100%;
+  background: #00e59b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*************************************/
+/********** [ SIGNUP PAGE ] **********/
+/*************************************/
+.sign-up-name-user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sign-up-name-user div {
+  width: 47%;
+}
+.sign-in-form #email {
+  margin-bottom: 16px;
+}
+.artwork-signup {
+  width: 514px;
+  height: 100%;
+  background: #06070d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/*********************************************/
+/********** [ PASSWORD RESET PAGE ] **********/
+/*********************************************/
+.sign-in-form p {
+  width: 400px;
+  text-align: justify;
+  font-family: "Kufam", cursive;
+  font-size: 14px;
+  text-decoration: none;
+  color: #06070d;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.pass_reset_form {
+  margin-top: 32px;
+}
+.sign-in-form form .passreset-btn {
+  width: 50%;
+}
+.pass_reset_form #email {
+  margin: 8px 0 !important;
+}
+/**************************************/
+/********** [ USER PROFILE ] **********/
+/**************************************/
+.user-profile {
+  width: 100%;
+}
+.user-cover {
+  width: 100%;
+  background: rgb(31, 35, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 35, 40, 1) 0%,
+    rgba(13, 15, 20, 1) 100%
+  );
+  position: relative;
+}
+.user-cover_img {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-shadow: inset 0px -165px 118px -104px rgba(0, 0, 0, 1);
+}
+.flex-usercover {
+  z-index: 1;
+  height: 390px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+/**[ User informations ] **/
+.user-information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+.user-avatar {
+  width: 100px;
+  margin-right: 16px;
+}
+.user-avatar img {
+  max-width: 100%;
+  height: auto;
+}
+.user-info-lil-sec h1 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 36px;
+}
+.user-info-lil-sec p {
+  font-family: "Kufam", cursive;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 12px 0;
+  color: #b1b1b9;
+}
+.user-info-lil-sec ul {
+  display: flex;
+  flex-direction: row;
+}
+.user-info-lil-sec ul li {
+  font-family: "Kufam", cursive;
+  font-weight: normal;
+  font-size: 14px;
+  margin-right: 12px;
+}
+.user-info-lil-sec ul li span {
+  color: #00e59b;
+  padding-right: 5px;
+}
+.user-info-lil-sec ul li:after {
+  content: "|";
+  padding-left: 12px;
+}
+.user-info-lil-sec ul li:last-child:after {
+  display: none;
+  margin: 0;
+}
+/**[ User informations btns ] **/
+.user-change-profile {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+.user-msg {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgb(7, 241, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 241, 135, 1) 0%,
+    rgba(82, 222, 190, 1) 100%
+  );
+  opacity: 0.8;
+  border: none;
+  padding: 16px 24px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+}
+.user-msg:hover {
+  opacity: 1;
+}
+.user-follow {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  opacity: 0.8;
+  border: none;
+  padding: 18px 32px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  margin-left: 16px;
+}
+.user-follow:hover {
+  opacity: 1;
+}
+/**[ profile navigation ] **/
+.user-profile-navigation {
+  width: 100%;
+  background: #06070d;
+  border-top: 1px solid rgba(31, 35, 40, 1);
+}
+.user-nav-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.user-profile-navigation ul {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.user-profile-navigation ul li:first-child a {
+  padding-left: 0;
+}
+.user-profile-navigation ul li {
+  padding: 24px 0;
+}
+.user-profile-navigation ul li a {
+  font-family: "Kufam", cursive;
+  font-size: 13px;
+  padding: 24px 16px;
+  text-decoration: none;
+  color: #b1b1b9;
+}
+.user-profile-navigation ul li a:hover {
+  color: #00e59b;
+}
+.user-profile-icon-sec ul li {
+  margin-left: 16px;
+}
+/**[ User works nav] **/
+.user-lil-nav-works {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 64px;
+  align-items: center;
+  flex-direction: row;
+}
+.user-lil-nav-works h2 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+/**[ User works ] **/
+.user-sec-works {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 32px 0;
+}
+.user-sec-works div {
+  width: 32%;
+  height: 280px;
+  background: #dddddd;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+.user-sec-works div a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.user-sec-works div a:hover,
+.user-sec-works div:hover a {
+  background: rgb(0, 0, 0);
+  opacity: 1;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(82, 222, 190, 0) 50%
+  );
+}
+.user-sec-works div:hover h5 {
+  visibility: visible;
+}
+.user-sec-works div h5 {
+  visibility: hidden;
+  color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 16px;
+}
+.user-sec-works div:hover .shot-like-btn {
+  visibility: visible;
+}
+.shot-like-btn {
+  visibility: hidden;
+  color: white;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  margin: 16px;
+  color: #6c6b77;
+}
+.user-sec-works div picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.user-sec-works div picture img {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+/**************************************/
+/********** [ USER ACCOUNT ] **********/
+/**************************************/
+.user-account {
+  background: #f7f9fa;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border-radius: 16px;
+  width: 100%;
+  margin: 128px 0 64px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.user-account-main {
+  width: 80%;
+  padding: 32px;
+  box-sizing: border-box;
+}
+.sidebar {
+  z-index: 2;
+  width: 20%;
+  color: white;
+  background: white;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.sidebar_btn {
+  display: none;
+}
+/**[ User informations ] **/
+.user-account-some-informations {
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 32px 64px;
+  box-sizing: border-box;
+  background: #fafbfc;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.acc-info {
+  display: flex;
+  flex-direction: column;
+}
+.acc-info-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-account-some-informations picture {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+}
+.user-account-some-informations picture img {
+  max-width: 100%;
+  height: auto;
+}
+.acc-info-user h2 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  color: #495057;
+}
+.acc-info-user span {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  margin: 0 8px;
+  color: #495057;
+}
+.acc-info-user h3 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 26px;
+  color: white;
+  padding: 4px;
+  border-radius: 8px;
+  background: rgb(7, 241, 135);
+}
+.acc-info p {
+  font-family: "Kufam", cursive;
+  font-weight: normal;
+  font-size: 14px;
+  margin-top: 6px;
+  color: #6c6b77;
+}
+/**[ SIDEBAR ] **/
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+.sidebar ul li a {
+  font-family: "Kufam", cursive;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 12px;
+  text-decoration: none;
+  color: #b1b1b9;
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.sidebar ul li a:hover {
+  color: white;
+  background-color: #00e59b;
+}
+.active-link,
+.active-link:hover {
+  font-weight: bold;
+  color: #06070d !important;
+}
+.sidebar ul li > ul {
+  margin-left: 16px;
+}
+.sidebar ul li > ul > li {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+/**[ ACCOUNT EDIT PART ] **/
+.row_col {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.col_100 {
+  width: 100%;
+}
+.col_50 {
+  width: 48%;
+}
+.form_account {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form_div_50 {
+  width: 49%;
+  margin-bottom: 16px;
+}
+.form_div_100 {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.account-bg {
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 32px;
+  box-sizing: border-box;
+  padding: 32px;
+  width: 100%;
+}
+.account-bg h3 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 32px;
+  background: #06070d;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.account-bg h4 {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.avatar_edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.picture {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin-right: 32px;
+}
+.picture img {
+  max-width: 100%;
+  height: auto;
+}
+.user-account-main button {
+  margin-right: 16px;
+}
+.user-account-main button:hover {
+  opacity: 1;
+}
+.green_btn {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  background: rgb(7, 241, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 241, 135, 1) 0%,
+    rgba(82, 222, 190, 1) 100%
+  );
+  opacity: 0.8;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 32px;
+  box-shadow: 0px 0px 10px 0px rgb(7, 241, 135, 1);
+}
+.gray_btn {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 16px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(235, 235, 235, 1) 100%
+  );
+  opacity: 0.8;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 32px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+/**[ ACCOUNT FORMS ] **/
+.account-bg form label {
+  font-family: "Kufam", cursive;
+  font-weight: bold;
+  font-size: 12px;
+}
+.account-bg form input[type="text"] {
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  color: rgba(31, 35, 40, 0.5);
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  border: none;
+  font-family: "Kufam", cursive;
+  font-size: 12px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.account-bg form input[type="text"]:hover,
+.account-bg form input[type="text"]:focus {
+  background: white;
+  color: #06070d !important;
+  box-shadow: 0px 0px 0px 5px rgba(0, 229, 155, 0.3);
+}
+.account-bg form button {
+  cursor: pointer;
+  font-family: "Kufam", cursive;
+  font-size: 14px;
+  background: rgb(7, 241, 135);
+  background: linear-gradient(
+    90deg,
+    rgba(7, 241, 135, 1) 0%,
+    rgba(82, 222, 190, 1) 100%
+  );
+  opacity: 0.6;
+  border: none;
+  padding: 16px;
+  font-weight: bolder;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+.account-bg form button:hover {
+  opacity: 1;
+}
+.select-class {
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  box-shadow: 0px 0px 0px 1px #ccc;
+  color: rgba(31, 35, 40, 1);
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"),
+    linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
+  border: none;
+  font-family: "Kufam", cursive;
+  font-size: 14px;
+  padding: 8px 16px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+.select-css::-ms-expand {
+  display: none;
+}
+.select-css option {
+  font-weight: normal;
+}
+.checkbox_style {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: normal !important;
+}
+input[type="checkbox"] {
+  position: relative;
+  cursor: pointer;
+  margin-right: 8px;
+}
+input[type="checkbox"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: #e9e9e9;
+}
+input[type="checkbox"]:checked:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 229, 155, 1);
+}
+input[type="checkbox"]:checked:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}

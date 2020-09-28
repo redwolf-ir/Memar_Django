@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memar</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+</head>
+<body>
+  <nav class="main-nav">
+    <div class="container nav-flex">
+      <h1 class="logo">Memar</h1>
+      <button class="btn-sus" id="btn_sus" onclick="nav_links()">&#9776</button>
+      <div class="main-nav-hidden" id="nav_links">
+        <ul>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">For Designers</a></li>
+          <li><a href="#">Hiring Designers?</a></li>
+        </ul>
+        <div class="nav-btns">
+          {% if user.is_authenticated %}
+            {{request.user.first_name}}
+          {% else %}
+          <a href="{% url 'login' %}">Login</a>
+          <a href="{% url 'register' %}">Register</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  {% block main %} {% endblock %}
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="bunch-of-links">
+        here ;)
+      </div>
+      <div class="copy-right-and-more">
+        <span class="copy-right">© 2020 Memar. All rights reserved.</span>
+        <span class="love-you">Made with ♥ remotely from fucking IRAN</span>
+        <span class="number-of-shots"><span>14,195,742</span> shots dribbbled</span>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  <script src="{% static 'js/javascripts.js' %}"></script>
+</body>
+</html>

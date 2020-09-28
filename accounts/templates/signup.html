@@ -1,0 +1,82 @@
+{% extends 'base.html' %} {% block main %} {% for message in messages %}
+<div id="alert" class="alert {{ message.tags }} alert-dismissible" role="alert">
+  <button
+    type="button"
+    class="close"
+    data-dismiss="alert"
+    aria-label="Close"
+    onclick="this.parentElement.style.display='none';"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+  {{ message|safe }}
+</div>
+{% endfor %}
+
+<div class="login-page">
+  <section class="login-form-and-more">
+    <span class="new-member-login">
+      Already a member?
+      <a href="{% url 'login' %}">Sign in</a>
+    </span>
+    <div class="sign-in-form">
+      <h1>Sign up to Dribbble</h1>
+      <div class="sign-in-buttons">
+        <button class="google-sign-in">Sign in with Google</button>
+        <button class="twitter-sign-in">T</button>
+      </div>
+      <div class="sign-in-or"><span>OR</span></div>
+      <form method="post" id="signupForm" autocomplete="off">
+        {% csrf_token %}
+        <input type="hidden" name="requestcode" value="True" />
+        <div class="sign-up-name-user">
+          <div>
+            <label for="first_name">name:</label>
+            <input
+              id="first_name"
+              type="text"
+              name="first_name"
+              placeholder="name"
+              autocomplete="off"
+            />
+          </div>
+          <div>
+            <label for="username">Username:</label>
+            <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="Username"
+              minlength="4"
+              required
+              autocomplete="off"
+            />
+          </div>
+        </div>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="email"
+          required
+        />
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          pattern="(?=.*\d)(?=.*[a-z]).{8,}"
+          required
+          autocomplete="off"
+          title="Must contain at least one  number and at least 8 or more characters"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+  <section class="artwork-signup">ss</section>
+</div>
+
+{% endblock %}

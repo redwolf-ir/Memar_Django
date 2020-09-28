@@ -1,0 +1,92 @@
+{% extends 'web/base.html' %} {% block main %}
+<section class="welcome-sec">
+  <div class="container welcome-flex">
+    <div class="welcome-txt">
+      <span>WITH MEMAR YOU CAN</span>
+      <h1 class="animate__animated animate__bounceIn">
+        Hire the world’s top designers
+      </h1>
+      <p>
+        Our hiring products help you to attract, engage, and connect with
+        qualified candidates faster than ever. Find out why the world’s best
+        companies trust Dribbble when hiring design talent.
+      </p>
+      <button>Sign Up</button>
+    </div>
+    <div class="welcome-illustrat">salam</div>
+  </div>
+</section>
+
+<section class="work-sec">
+  <div class="container">
+    <nav class="work-nav">
+      <div class="select-type-of-work">
+        <button id="selector_btn" class="dropbtn" onclick="dropDownFunc()">
+          Popular
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="" onclick="selectorBtnText('Popular');return false;"
+            >Popular</a
+          >
+          <a href="" onclick="selectorBtnText('Best of the Best');return false;"
+            >Best of the Best</a
+          >
+          <a href="" onclick="selectorBtnText('Goods for Sale');return false;"
+            >Goods for Sale</a
+          >
+        </div>
+      </div>
+      <ul class="works-category" id="slide">
+        <li><a href="#">Animation</a></li>
+        <li><a href="#">Branding</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Web Design</a></li>
+        <li><a href="#">Mobile</a></li>
+        <li><a href="#">Web Design</a></li>
+      </ul>
+      <button onclick="filterBtn()" class="selector-filter" id="myfilterBtn">
+        Filter
+      </button>
+    </nav>
+    <nav id="filterNav" class="filterNav">
+      <div class="filter-nav">
+        <div class="search-form">
+          <form action="">
+            <input type="search" name="" id="" placeholder="Search ..." />
+          </form>
+        </div>
+        <div class="period-of-time">
+          <button id="time_btn" class="dropbtn_time" onclick="time_btn()">
+            Popular
+          </button>
+          <div class="timeSelect-content" id="timeSelectors">
+            <a href="#" onclick="timeSelBtn('Popular');return false;"
+              >Popular</a
+            >
+            <a href="#" onclick="timeSelBtn('Best of the Best');return false;"
+              >Best of the Best</a
+            >
+            <a href="#" onclick="timeSelBtn('Goods for Sale');return false;"
+              >Goods for Sale</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="work-sec-works">
+      {% for shot in shots %}
+      <div>
+        <a href="{{shot.user}}/{{shot.id}}/{{ shot.slug }}">
+          <h5>{{shot.user}}</h5>
+        </a>
+        <button class="shot-like-btn">like</button>
+        <picture class="thumbnail">
+          <img src="{{shot.thumbnail.url}}" alt="thumbnail" />
+        </picture>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

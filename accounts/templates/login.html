@@ -1,0 +1,54 @@
+{% extends 'base.html' %} {% block main %} {% for message in messages %}
+<div id="alert" class="alert {{ message.tags }} alert-dismissible" role="alert">
+  <button
+    type="button"
+    class="close"
+    data-dismiss="alert"
+    aria-label="Close"
+    onclick="this.parentElement.style.display='none';"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+  {{ message }}
+</div>
+{% endfor %}
+
+<div class="login-page">
+  <section class="login-form-and-more">
+    <span class="new-member-login">
+      Not a member?
+      <a href="{% url 'register' %}">Sign up Now</a>
+    </span>
+    <div class="sign-in-form">
+      <h1>Sign in to Memar</h1>
+      <div class="sign-in-buttons">
+        <button class="google-sign-in">Sign in with Google</button>
+        <button class="twitter-sign-in">T</button>
+      </div>
+      <div class="sign-in-or"><span>OR</span></div>
+      <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input
+          id="username"
+          type="text"
+          name="username"
+          placeholder="Username"
+        />
+        <div class="password-forget">
+          <label for="password">Password:</label>
+          <a href="{% url 'accounts:password_reset' %}">Forgot password?</a>
+        </div>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Password"
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  </section>
+  <section class="artwork">ss</section>
+</div>
+{% endblock %}
